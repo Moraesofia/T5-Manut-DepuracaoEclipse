@@ -62,20 +62,34 @@ public class DepuracaoEclipse {
 
 		// Explorando um método
 		// Trocando o escopo
-		int x = 1;
+		int x = -40;
 		System.out.println("Valor inicial de x: " + x);
-		x = somaDez(x);
+		x = soma(x);
 		System.out.println("Valor final de x: " + x);
+		
+		// Operações lógicas
+		// Explorando espressões
+		boolean maior;
+		if (x > 10) {
+			maior = true;
+			System.out.println("O valor final de x é maior que dez");	
+		} else {
+			maior = false;
+		}
+		
+		if (maior == false && x < 10) {
+			System.out.println("O valor final de x é menor que dez");
+		}
 
 	}
 
 	/**
-	 * Método separado do main - Acrescenta uma dezena a um numero n.
+	 * Método separado do main - Acrescenta 45 a um numero n em dez iterações.
 	 * 
-	 * @param n numero que será somado.
-	 * @return o parâmetro após a soma.
+	 * @param n
+	 * @return o parâmetro após a soma
 	 */
-	public static int somaDez(int n) {
+	public static int soma(int n) {
 
 		for (int i = 0; i < 10; i++) {
 			n += i;
