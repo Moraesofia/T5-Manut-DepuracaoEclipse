@@ -1,7 +1,7 @@
 package seminarioManutencao;
 
 /**
- * Demonstração de Java Exeptions para testar a função de depuração da IDE
+ * Demonstraï¿½ï¿½o de Java Exeptions para testar a funï¿½ï¿½o de depuraï¿½ï¿½o da IDE
  * Eclipse.
  * 
  * @author Sofia Moraes e Nelson William
@@ -12,7 +12,7 @@ public class DepuracaoEclipse {
 	public static void main(String[] args) {
 
 		// Causando ArrayIndexOutOfBoundsException
-		// Acessando uma posiçao do array que não existe.
+		// Acessando uma posiï¿½ao do array que nï¿½o existe.
 		int[] numeros = new int[5];
 		int i = 0;
 
@@ -22,7 +22,7 @@ public class DepuracaoEclipse {
 				System.out.println(numeros[i]);
 			}
 		} catch (Exception a) {
-			// Note que que o numero de repetições foi maior que o tamanho do vetor.
+			// Note que que o numero de repetiï¿½ï¿½es foi maior que o tamanho do vetor.
 			System.out.println("Algo deu errado: " + a.getMessage());
 		}
 		System.out.println();
@@ -38,7 +38,7 @@ public class DepuracaoEclipse {
 				System.out.println("Divisao de 6 por " + j + " e igual a " + divisao);
 			}
 		} catch (Exception b) {
-			// Note que houve uma divisão por zero.
+			// Note que houve uma divisï¿½o por zero.
 			System.out.println("Algo deu errado: " + b.getMessage());
 		}
 
@@ -56,11 +56,11 @@ public class DepuracaoEclipse {
 			System.out.println("primeiro item dos vetores respectivamente: " + vetorUm[0] + " " + vetorDois[0] + " "
 					+ vetorTres[0]);
 		} catch (Exception c) {
-			// Note que dentre os três vetores, um deles causou a exceção.
+			// Note que dentre os trï¿½s vetores, um deles causou a exceï¿½ï¿½o.
 			System.out.println("Algo deu errado: " + c.getMessage());
 		}
 
-		// Explorando um método
+		// Explorando um mï¿½todo
 		// Trocando o escopo
 		int x = 1;
 		System.out.println("Valor inicial de x: " + x);
@@ -70,10 +70,10 @@ public class DepuracaoEclipse {
 	}
 
 	/**
-	 * Método separado do main - Acrescenta uma dezena a um numero n.
+	 * Mï¿½todo separado do main - Acrescenta uma dezena a um numero n.
 	 * 
-	 * @param n numero que será somado.
-	 * @return o parâmetro após a soma.
+	 * @param n numero que serï¿½ somado.
+	 * @return o parï¿½metro apï¿½s a soma.
 	 */
 	public static int somaDez(int n) {
 
