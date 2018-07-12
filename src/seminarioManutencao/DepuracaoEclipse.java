@@ -1,8 +1,11 @@
 package seminarioManutencao;
 
 /**
- * Demonstracao de Java Exeptions para testar a funcionalidades de depuracao da IDE
- * Eclipse.
+ * Demonstracao de Java Exeptions para testar a funcionalidades de depuracao da
+ * IDE Eclipse.
+ * <p>
+ * Insira breakpoints nas linhas 16, 32, 49, 65 e 74, acompanhe o fluxo de
+ * execução do codigo e resolva os defeitos que causam as excecoes.
  * 
  * @author Sofia Moraes e Nelson William
  *
@@ -66,17 +69,18 @@ public class DepuracaoEclipse {
 		System.out.println("Valor inicial de x: " + x);
 		x = soma(x);
 		System.out.println("Valor final de x: " + x);
-		
+
 		// Operações lógicas
 		// Explorando espressões
+		// Troque o valor de x para diferentes fluxos de execucao
 		boolean maior;
 		if (x > 10) {
 			maior = true;
-			System.out.println("O valor final de x é maior que dez");	
+			System.out.println("O valor final de x é maior que dez");
 		} else {
 			maior = false;
 		}
-		
+
 		if (maior == false && x < 10) {
 			System.out.println("O valor final de x é menor que dez");
 		}
@@ -85,8 +89,9 @@ public class DepuracaoEclipse {
 
 	/**
 	 * Método separado do main - Acrescenta 45 a um numero n em dez iterações.
-	 * @param n numero que sera somado
-	 * @return parametro apos a soma 
+	 * 
+	 * @param n
+	 * @return parametro apos a soma
 	 */
 	public static int soma(int n) {
 
